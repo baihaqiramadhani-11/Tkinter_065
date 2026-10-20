@@ -43,3 +43,15 @@ for i in range(10):
         fg=FG,
         anchor="e",
     ).grid(row=i, column=0, sticky="e", padx=(0, 10), pady=5)
+
+    entry = tk.Entry(
+        form,
+        width=20,
+        font=("Segoe UI", 10),
+        bg=ENTRY_BG,
+        fg=FG,
+        insertbackground=FG,
+        relief="flat",
+    )
+    entry.grid(row=i, column=1, pady=5, ipady=3)
+    entries.append(entry)
