@@ -32,3 +32,14 @@ label_judul.grid(row=0, column=0, columnspan=3, pady=(25, 20))
 # ====== 2. Sepuluh input nilai mata pelajaran ======
 form = tk.Frame(root, bg=BG)
 form.grid(row=1, column=1)
+
+entries = []
+for i in range(10):
+    tk.Label(
+        form,
+        text=f"Nilai Mata Pelajaran {i + 1}:",
+        font=("Segoe UI", 10, "bold"),
+        bg=BG,
+        fg=FG,
+        anchor="e",
+    ).grid(row=i, column=0, sticky="e", padx=(0, 10), pady=5)
