@@ -18,3 +18,13 @@ root.resizable(False, False)
 root.columnconfigure(0, weight=1)
 root.columnconfigure(1, weight=0)
 root.columnconfigure(2, weight=1)
+
+# ====== 1. Label judul ======
+label_judul = tk.Label(
+    root,
+    text="Aplikasi Prediksi Prodi Pilihan",
+    font=("Segoe UI", 16, "bold"),
+    bg=BG,
+    fg=FG,
+)
+label_judul.grid(row=0, column=0, columnspan=3, pady=(25, 20))
