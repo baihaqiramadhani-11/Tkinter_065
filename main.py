@@ -28,3 +28,7 @@ label_judul = tk.Label(
     fg=FG,
 )
 label_judul.grid(row=0, column=0, columnspan=3, pady=(25, 20))
+
+# ====== 2. Sepuluh input nilai mata pelajaran ======
+form = tk.Frame(root, bg=BG)
+form.grid(row=1, column=1)
